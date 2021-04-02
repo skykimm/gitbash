@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <main id="container" class="login-wrap">
+    <section class="login-page">
+      <!-- logo -->
+      <header class="logo-wrap">
+        <h1 class="logo"></h1>
+        <h2>ADMIN LOGIN</h2>
+      </header>
+
+      <!-- Login form -->
+      <form class="login-form">
+        <!-- e-mail -->
+        <section class="form-group-block">
+          <label for="loginEmail">Username</label>
+          <input type="email" name="loginEmail" id="loginEmail" placeholder="type your username" />
+        </section>
+
+        <!-- password -->
+        <section class="form-group-block">
+          <label for="loginPassword">Password</label>
+          <input type="password" name="loginPassword" id="loginPassword" placeholder="type your password" />
+        </section>
+
+        <!-- checkbox -->
+        <div class="form-group-block chk-group">
+          <input type="checkbox" name="loginRemember" id="loginRemember" />
+          <label for="loginRemember"><span class="chk"></span>Remember Username</label>
+          <!-- forgetpassword -->
+          <button type="button" id="btnForgetPassword" class="btn-label btn-forget" onclick="location.href='forgetpassword.html'">Forgot password?</button>
+        </div>
+
+        <!-- Login button -->
+        <section class="form-group-block btn-group">
+          <button type="button" id="btnLogin" class="btn btn-login">Sign in</button>
+        </section>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
