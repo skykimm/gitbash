@@ -209,17 +209,7 @@ button {
   background-color: #F8F8F8;
 }
 
-.login-page {
-  width: 560px;
-  height: 720px;
-  background-color: #fff;
-  margin: auto;
-  border-radius: 14px;
-  -webkit-box-shadow: 3px 3px 8px black;
-          box-shadow: 3px 3px 8px black;
-}
-
-.logo-wrap .logo {
+.login-wrap .logo {
   width: 120px;
   height: 30px;
   margin: 83px auto 10px;
@@ -227,12 +217,22 @@ button {
   background-size: cover;
 }
 
-.logo-wrap h2 {
+.login-wrap h2 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
   letter-spacing: -0.5px;
   color: #262626;
+}
+
+.login-page {
+  width: 560px;
+  height: 720px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 14px;
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .login-form {

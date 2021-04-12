@@ -115,6 +115,20 @@ button {
   height: 100%;
   text-align: center;
   background-color: #F8F8F8;
+  .logo{
+    width: 120px;
+    height: 30px;
+    margin: 83px auto 10px;
+    background: url('../img/logo.png') no-repeat center;
+    background-size: cover;
+  }
+  h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+    color: #262626;
+  }
 }
 
 .login-page{
@@ -123,57 +137,38 @@ button {
   background-color: #fff;
   margin: auto;
   border-radius: 14px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 6%);
-}
-
-.logo-wrap .logo {
-  width: 120px;
-  height: 30px;
-  margin: 83px auto 10px;
-  background: url('../img/logo.png') no-repeat center;
-  background-size: cover;
-}
-
-.logo-wrap h2 {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  letter-spacing: -0.5px;
-  color: #262626;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .login-form{
   width: 430px;
   margin: 0 auto;
   align-items: center;
-}
-
-.login-form label{
-  display: flex;
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-}
-
-.login-form .btn-forget{
-  display: flex;
-  position: absolute;
-  right: 0;
-  font-size: 15px;
-  font-weight: 400;
-  color: #EE7623;
-  text-decoration: underline;
-}
-
-.login-form .btn-login {
-  margin-top: 30px;
-  width: 430px;
-  height: 64px;
-  border-radius: 37px;
-  text-align: center;
-  font-size: 26px;
-  color: #fff;
-  background-color: #CE0E2D;
+  label{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  .btn-forget{
+    display: flex;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #EE7623;
+    text-decoration: underline;
+  }
+  .btn-login {
+    margin-top: 30px;
+    width: 430px;
+    height: 64px;
+    border-radius: 37px;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    background-color: #CE0E2D;
+  }
 }
 
 .chk-group label {
