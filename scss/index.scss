@@ -41,16 +41,13 @@ input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
-}
-
-/* Hide the browser's default checkbox */
-.rdo-group input,
-.chk-group input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 }
 
 .rdo:after,
@@ -127,7 +124,7 @@ button {
     font-weight: bold;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
-    color: #262626;
+    color: $grey-26;
   }
 }
 
@@ -179,16 +176,16 @@ button {
 
 
 /* radio & checkbox */
-.login-wrap .rdo,
-.login-wrap .chk {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 2px;
-  background: $white;
-  border: 1px solid #ddd;
-}
-
+.login-wrap{
+  .rdo, .chk{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background: $white;
+    border: 1px solid $grey-dd;
+  }
+} 
 
 /* input */
 input[type="email"],
@@ -208,7 +205,7 @@ input[type="text"] {
 input[type="email"]::placeholder,
 input[type="password"]::placeholder {
   font-size: 18px;
-  color: #ddd;
+  color: $grey-dd;
 }
 
 @media (max-width: 600px){

@@ -136,7 +136,6 @@ input:disabled {
   cursor: pointer;
 }
 
-/* Hide the browser's default checkbox */
 .rdo-group input,
 .chk-group input {
   position: absolute;
@@ -282,14 +281,13 @@ button {
 }
 
 /* radio & checkbox */
-.login-wrap .rdo,
-.login-wrap .chk {
+.login-wrap .rdo, .login-wrap .chk {
   margin-right: 10px;
   width: 20px;
   height: 20px;
   border-radius: 2px;
   background: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #DDDDDD;
 }
 
 /* input */
@@ -309,25 +307,25 @@ input[type="text"] {
 input[type="email"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder {
   font-size: 18px;
-  color: #ddd;
+  color: #DDDDDD;
 }
 
 input[type="email"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder {
   font-size: 18px;
-  color: #ddd;
+  color: #DDDDDD;
 }
 
 input[type="email"]::-ms-input-placeholder,
 input[type="password"]::-ms-input-placeholder {
   font-size: 18px;
-  color: #ddd;
+  color: #DDDDDD;
 }
 
 input[type="email"]::placeholder,
 input[type="password"]::placeholder {
   font-size: 18px;
-  color: #ddd;
+  color: #DDDDDD;
 }
 
 @media (max-width: 600px) {
