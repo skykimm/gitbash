@@ -78,11 +78,18 @@ input {
   transform: rotate(45deg);
 }
 
-.chk-group label,
-.rdo-group label {
-  position: relative;
-  display: inline-block;
-  min-height: 1.25rem;
+.chk-group, .rdo-group{
+  label {
+    position: relative;
+    display: inline-block;
+    min-height: 1.25rem;
+  }
+}
+
+.chk-group label {
+  color: $grey-44;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .rdo-group label {
@@ -167,13 +174,6 @@ button {
     background-color: $point;
   }
 }
-
-.chk-group label {
-  color: $grey-44;
-  font-size: 15px;
-  font-weight: normal;
-}
-
 
 /* radio & checkbox */
 .login-wrap{

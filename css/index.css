@@ -173,11 +173,16 @@ input:disabled {
   transform: rotate(45deg);
 }
 
-.chk-group label,
-.rdo-group label {
+.chk-group label, .rdo-group label {
   position: relative;
   display: inline-block;
   min-height: 1.25rem;
+}
+
+.chk-group label {
+  color: #444444;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .rdo-group label {
@@ -272,12 +277,6 @@ button {
   font-size: 26px;
   color: #ffffff;
   background-color: #CE0E2D;
-}
-
-.chk-group label {
-  color: #444444;
-  font-size: 15px;
-  font-weight: normal;
 }
 
 /* radio & checkbox */
