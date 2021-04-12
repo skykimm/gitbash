@@ -79,3 +79,17 @@ cursor: default; }
 
 hr {
 display: none; }
+
+html,
+body {
+  height: 100%;
+}
+
+/* safari 크로스 브라우징 */
+input,
+button {
+  // -webkit-border-radius: 0;
+  // -webkit-outline: none;
+  // -webkit-box-shadow: none;
+  -webkit-appearance: none;
+}

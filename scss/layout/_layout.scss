@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------
+	component # form
+---------------------------------------------------------- */
+/* 레이아웃 */
+.form-group-block {
+    padding: 0.5rem 0;
+    label{
+      padding: 0.5625rem 0;
+    }
+  }
+  
+  /* input */
+  label {
+    display: inline-block;
+  }
+  
+  input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &:disabled{
+      background: $grey-ee;
+      border-color: $grey-db;
+    }
+  }
+  
+  /* radio & checkbox */
+  .rdo-group,
+  .chk-group {
+    display: flex;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    input{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  }
+  
+  .rdo:after,
+  .chk:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .chk-group input:checked+label .chk:after,
+  .rdo-group input:checked+label .rdo:after {
+    display: block;
+  }
+  
+  .chk-group input:checked+label .chk{
+    border: 1px solid $grey-44;
+  }
+  
+  /* :checked 시 */
+  .chk-group .chk:after {
+    top: 11px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid $point;
+    border-width: 0 0.125rem 0.125rem 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .chk-group, .rdo-group{
+    label {
+      position: relative;
+      display: inline-block;
+      min-height: 1.25rem;
+    }
+  }
+  
+  .chk-group label {
+    color: $grey-44;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  
+  .rdo-group label {
+    font-size: 0.8125rem;
+  }
