@@ -1,0 +1,230 @@
+// @import 'mixin';
+// @import 'layout/font';
+@import 'layout/reset';
+
+  
+
+/* ----------------------------------------------------------
+	component # form
+---------------------------------------------------------- */
+/* 레이아웃 */
+.form-group-block {
+  padding: 0.5rem 0;
+  label{
+    padding: 0.5625rem 0;
+  }
+}
+
+/* input */
+label {
+  display: inline-block;
+}
+
+input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &:disabled{
+    background: #eeeeee;
+    border-color: #dbdbdb;
+  }
+}
+
+/* radio & checkbox */
+.rdo-group,
+.chk-group {
+  display: flex;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.rdo-group input,
+.chk-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.rdo:after,
+.chk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.chk-group input:checked+label .chk:after,
+.rdo-group input:checked+label .rdo:after {
+  display: block;
+}
+
+.chk-group input:checked+label .chk{
+  border: 1px solid #444;
+}
+
+/* :checked 시 */
+.chk-group .chk:after {
+  top: 11px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid #CE0E2D;
+  border-width: 0 0.125rem 0.125rem 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.chk-group label,
+.rdo-group label {
+  position: relative;
+  display: inline-block;
+  min-height: 1.25rem;
+}
+
+.rdo-group label {
+  font-size: 0.8125rem;
+}
+
+/* ----------------------------------------------------------
+	Layout # login
+---------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+}
+
+/* safari 크로스 브라우징 */
+input,
+button {
+  // -webkit-border-radius: 0;
+  // -webkit-outline: none;
+  // -webkit-box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.login-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #F8F8F8;
+}
+
+.login-page{
+  width: 560px;
+  height: 720px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 14px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 6%);
+}
+
+.logo-wrap .logo {
+  width: 120px;
+  height: 30px;
+  margin: 83px auto 10px;
+  background: url(img/logo.png) no-repeat center;
+  background-size: cover;
+}
+
+.logo-wrap h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+  color: #262626;
+}
+
+.login-form{
+  width: 430px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.login-form label{
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-form .btn-forget{
+  display: flex;
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #EE7623;
+  text-decoration: underline;
+}
+
+.login-form .btn-login {
+  margin-top: 30px;
+  width: 430px;
+  height: 64px;
+  border-radius: 37px;
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+  background-color: #CE0E2D;
+}
+
+.chk-group label {
+  color: #444;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+
+/* radio & checkbox */
+.login-wrap .rdo,
+.login-wrap .chk {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+/* input */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 430px;
+  height: 68px;
+  padding: 20px 24px;
+  background: transparent;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  color: #444;
+  font-size: 18px;
+}
+
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  font-size: 18px;
+  color: #ddd;
+}
+
+@media (max-width: 600px){
+  .login-page,
+  input[type="email"],
+  input[type="password"]{
+    width: 100%;
+  }
+  .login-form,
+  .login-form .btn-login{
+    width: 100%;
+    padding: 0 20px;
+  }
+} 
