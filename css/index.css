@@ -116,8 +116,8 @@ input {
 }
 
 input:disabled {
-  background: #eeeeee;
-  border-color: #dbdbdb;
+  background: #EEEEEE;
+  border-color: #DBDBDB;
 }
 
 /* radio & checkbox */
@@ -159,7 +159,7 @@ input:disabled {
 }
 
 .chk-group input:checked + label .chk {
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* :checked 시 */
@@ -228,7 +228,7 @@ button {
 .login-page {
   width: 560px;
   height: 720px;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: auto;
   border-radius: 14px;
   -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);

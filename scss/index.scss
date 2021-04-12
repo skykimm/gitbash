@@ -1,5 +1,5 @@
 // @import 'mixin';
-// @import 'layout/font';
+@import 'layout/font';
 @import 'layout/reset';
 
   
@@ -24,8 +24,8 @@ input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   &:disabled{
-    background: #eeeeee;
-    border-color: #dbdbdb;
+    background: $grey-ee;
+    border-color: $grey-db;
   }
 }
 
@@ -66,7 +66,7 @@ input {
 }
 
 .chk-group input:checked+label .chk{
-  border: 1px solid #444;
+  border: 1px solid $grey-44;
 }
 
 /* :checked 시 */
@@ -75,7 +75,7 @@ input {
   left: 7px;
   width: 5px;
   height: 10px;
-  border: solid #CE0E2D;
+  border: solid $point;
   border-width: 0 0.125rem 0.125rem 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -134,7 +134,7 @@ button {
 .login-page{
   width: 560px;
   height: 720px;
-  background-color: #fff;
+  background-color: $white;
   margin: auto;
   border-radius: 14px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
@@ -167,7 +167,7 @@ button {
     text-align: center;
     font-size: 26px;
     color: #fff;
-    background-color: #CE0E2D;
+    background-color: $point;
   }
 }
 
