@@ -114,7 +114,7 @@ button {
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: $grey-f8;
   .logo{
     width: 120px;
     height: 30px;
@@ -148,7 +148,7 @@ button {
     display: flex;
     font-size: 18px;
     font-weight: 600;
-    color: #333;
+    color: $grey-33;
   }
   .btn-forget{
     display: flex;
@@ -166,13 +166,13 @@ button {
     border-radius: 37px;
     text-align: center;
     font-size: 26px;
-    color: #fff;
+    color: $white;
     background-color: $point;
   }
 }
 
 .chk-group label {
-  color: #444;
+  color: $grey-44;
   font-size: 15px;
   font-weight: normal;
 }
@@ -185,7 +185,7 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  background: #fff;
+  background: $white;
   border: 1px solid #ddd;
 }
 
@@ -198,9 +198,9 @@ input[type="text"] {
   height: 68px;
   padding: 20px 24px;
   background: transparent;
-  border: 1px solid #eee;
+  border: 1px solid $grey-ee;
   border-radius: 4px;
-  color: #444;
+  color: $grey-44;
   font-size: 18px;
 }
 

@@ -249,7 +249,7 @@ button {
   display: flex;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #333333;
 }
 
 .login-form .btn-forget {
@@ -271,12 +271,12 @@ button {
   border-radius: 37px;
   text-align: center;
   font-size: 26px;
-  color: #fff;
+  color: #ffffff;
   background-color: #CE0E2D;
 }
 
 .chk-group label {
-  color: #444;
+  color: #444444;
   font-size: 15px;
   font-weight: normal;
 }
@@ -288,7 +288,7 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #ddd;
 }
 
@@ -300,9 +300,9 @@ input[type="text"] {
   height: 68px;
   padding: 20px 24px;
   background: transparent;
-  border: 1px solid #eee;
+  border: 1px solid #EEEEEE;
   border-radius: 4px;
-  color: #444;
+  color: #444444;
   font-size: 18px;
 }
 
