@@ -1,16 +1,25 @@
+/* ----------------------------------------------------------
+	// @include fontSizeColor
+---------------------------------------------------------- */
 @mixin fontSizeColor($fontSize : 40px, $fontColor : #fff) {
     font-size : $fontSize;
     color : $fontColor;
   }
-  // @include fontSizeColor
 
+
+  /* ----------------------------------------------------------
+	 // @extend %displayFlex
+  ---------------------------------------------------------- */
   %displayFlex{
     display: flex;
   }
-  // @extend %displayFlex
 
-  
 
+  /* ----------------------------------------------------------
+    // @include weight(bold);
+    // @include weight(600);
+    // @include weight(400);
+  ---------------------------------------------------------- */
   @mixin fontWeight($fontweight){
     font-weight: $fontweight;
   }
