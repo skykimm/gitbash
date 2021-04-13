@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.login-wrap, .login-form label, .login-form .btn-forget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* ----------------------------------------------------------
 	component # form
 ---------------------------------------------------------- */
@@ -204,9 +210,6 @@ button {
 	Layout # login
 ---------------------------------------------------------- */
 .login-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -222,10 +225,10 @@ button {
 }
 
 .login-wrap h2 {
-  font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;
   letter-spacing: -0.5px;
+  font-size: 40px;
   color: #262626;
 }
 
@@ -248,24 +251,18 @@ button {
 }
 
 .login-form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 18px;
   font-weight: 600;
+  font-size: 18px;
   color: #333333;
 }
 
 .login-form .btn-forget {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
   right: 0;
-  font-size: 15px;
   font-weight: 400;
-  color: #EE7623;
   text-decoration: underline;
+  font-size: 15px;
+  color: #EE7623;
 }
 
 .login-form .btn-login {
@@ -274,9 +271,9 @@ button {
   height: 64px;
   border-radius: 37px;
   text-align: center;
+  background-color: #CE0E2D;
   font-size: 26px;
   color: #ffffff;
-  background-color: #CE0E2D;
 }
 
 /* radio & checkbox */
@@ -299,8 +296,8 @@ input[type="text"] {
   background: transparent;
   border: 1px solid #EEEEEE;
   border-radius: 4px;
-  color: #444444;
   font-size: 18px;
+  color: #444444;
 }
 
 input[type="email"]::-webkit-input-placeholder,

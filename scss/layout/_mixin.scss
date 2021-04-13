@@ -1,0 +1,10 @@
+@mixin fontSizeColor($fontSize : 40px, $fontColor : #fff) {
+    font-size : $fontSize;
+    color : $fontColor;
+  }
+  // @include fontSizeColor
+
+  %displayFlex{
+    display: flex;
+  }
+  // @extend %displayFlex
