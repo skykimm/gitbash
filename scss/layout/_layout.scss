@@ -82,9 +82,8 @@
   
   .chk-group{
     label {
-    color: $grey-44;
-    font-size: 15px;
     font-weight: normal;
+    @include fontSizeColor(15px,$grey-44);
   }
 } 
   
