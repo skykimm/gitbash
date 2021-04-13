@@ -26,7 +26,6 @@
   /* radio & checkbox */
   .rdo-group,
   .chk-group {
-    display: flex;
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -35,6 +34,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     cursor: pointer;
+    @extend %displayFlex;
     input{
       position: absolute;
       opacity: 0;

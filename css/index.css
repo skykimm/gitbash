@@ -5,7 +5,8 @@
 /* ----------------------------------------------------------
 	 // @extend %displayFlex
   ---------------------------------------------------------- */
-.login-wrap, .login-form .btn-forget {
+.rdo-group,
+.chk-group, .login-wrap, .login-form .btn-forget {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,9 +47,6 @@ input:disabled {
 /* radio & checkbox */
 .rdo-group,
 .chk-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
