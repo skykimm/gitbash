@@ -7,7 +7,6 @@
 /* ----------------------------------------------------------
 	Layout # login
 ---------------------------------------------------------- */
-
 .login-wrap {
   width: 100%;
   height: 100%;
@@ -51,8 +50,8 @@
     position: absolute;
     right: 0;
     text-decoration: underline;
-    @include weight(400);
     @extend %displayFlex;
+    @include weight(400);
     @include fontSizeColor(15px,#EE7623);
   }
   .btn-login {
