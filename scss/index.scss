@@ -22,9 +22,9 @@
     background-size: cover;
   }
   h2{
-    font-weight: bold;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
+    @include weight(bold);
     @include fontSizeColor(40px,$grey-26);
   }
 }
@@ -44,8 +44,8 @@
   align-items: center;
   label{
     font-weight: 600;
-    @extend %displayFlex;
-    @include fontSizeColor(18px,$grey-33);
+    display: flex;
+    @include fontSizeColor(18px, $grey-33);
   }
   .btn-forget{
     position: absolute;

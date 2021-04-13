@@ -8,3 +8,21 @@
     display: flex;
   }
   // @extend %displayFlex
+
+  @mixin fontWeight($fontweight){
+    font-weight: $fontweight;
+  }
+
+  @mixin weight($font){
+    @if $font == 'bold'{
+      @include fontWeight(bold);
+    }
+    @else if $font == '600'{
+      @include fontWeight(600);
+    }
+    @else {
+      @include fontWeight(400);
+    }
+  }
+
+ 

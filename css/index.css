@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.login-wrap, .login-form label, .login-form .btn-forget {
+.login-wrap, .login-form .btn-forget {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,9 +225,9 @@ button {
 }
 
 .login-wrap h2 {
-  font-weight: bold;
   margin-bottom: 50px;
   letter-spacing: -0.5px;
+  font-weight: bold;
   font-size: 40px;
   color: #262626;
 }
@@ -252,6 +252,9 @@ button {
 
 .login-form label {
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 18px;
   color: #333333;
 }
