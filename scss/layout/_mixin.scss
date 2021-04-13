@@ -17,7 +17,7 @@
     @if $font == 'bold'{
       @include fontWeight(bold);
     }
-    @else if $font == '600'{
+    @else if $font == 600{
       @include fontWeight(600);
     }
     @else {
@@ -25,4 +25,3 @@
     }
   }
 
- 

@@ -43,15 +43,15 @@
   margin: 0 auto;
   align-items: center;
   label{
-    font-weight: 600;
     display: flex;
+    @include weight(600);
     @include fontSizeColor(18px, $grey-33);
   }
   .btn-forget{
     position: absolute;
     right: 0;
-    font-weight: 400;
     text-decoration: underline;
+    @include weight(400);
     @extend %displayFlex;
     @include fontSizeColor(15px,#EE7623);
   }

@@ -251,10 +251,10 @@ button {
 }
 
 .login-form label {
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 600;
   font-size: 18px;
   color: #333333;
 }
@@ -262,8 +262,8 @@ button {
 .login-form .btn-forget {
   position: absolute;
   right: 0;
-  font-weight: 400;
   text-decoration: underline;
+  font-weight: 400;
   font-size: 15px;
   color: #EE7623;
 }
