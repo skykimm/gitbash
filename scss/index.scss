@@ -109,3 +109,15 @@ input[type="password"]::placeholder {
   }
 } 
 
+@for $i from 1 through 5{
+  .text-#{$i} { 
+    font-size: $i*10px;
+  }
+}
+
+@for $i from 1 through 7{
+  .ski#{$i} p{ 
+    background:url(../images/sub1_#{$i}.png) no-repeat left center; 
+  } 
+} 
+
