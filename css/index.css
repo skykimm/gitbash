@@ -375,30 +375,22 @@ input[type="password"]::placeholder {
   font-size: 50px;
 }
 
-.ski1 p {
-  background: url(../images/sub1_1.png) no-repeat left center;
+.bg1 p {
+  background: url("../images/bg1_1.png") no-repeat left center;
 }
 
-.ski2 p {
-  background: url(../images/sub1_2.png) no-repeat left center;
+.bg2 p {
+  background: url("../images/bg1_2.png") no-repeat left center;
 }
 
-.ski3 p {
-  background: url(../images/sub1_3.png) no-repeat left center;
+.bg3 p {
+  background: url("../images/bg1_3.png") no-repeat left center;
 }
 
-.ski4 p {
-  background: url(../images/sub1_4.png) no-repeat left center;
+.bg4 p {
+  background: url("../images/bg1_4.png") no-repeat left center;
 }
 
-.ski5 p {
-  background: url(../images/sub1_5.png) no-repeat left center;
-}
-
-.ski6 p {
-  background: url(../images/sub1_6.png) no-repeat left center;
-}
-
-.ski7 p {
-  background: url(../images/sub1_7.png) no-repeat left center;
+.bg5 p {
+  background: url("../images/bg1_5.png") no-repeat left center;
 }

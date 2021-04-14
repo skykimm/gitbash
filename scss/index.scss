@@ -115,9 +115,9 @@ input[type="password"]::placeholder {
   }
 }
 
-@for $i from 1 through 7{
-  .ski#{$i} p{ 
-    background:url(../images/sub1_#{$i}.png) no-repeat left center; 
+@for $i from 1 through 5{
+  .bg#{$i} p{ 
+    background:url('../images/bg1_#{$i}.png') no-repeat left center; 
   } 
 } 
 
