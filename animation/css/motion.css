@@ -1,0 +1,270 @@
+
+/* 모션 =========================================================*/
+/* Mask off ====================*/
+/* to right */
+.section .motion.sec_img.mask_slide_right .bx_img {
+    transform: translate3d(-25%, 0, 0);
+    -webkit-transform: translate3d(-25%, 0, 0);
+    -moz-transform: translate3d(-25%, 0, 0);
+    -ms-transform: translate3d(-25%, 0, 0);
+    -o-transform: translate3d(-25%, 0, 0);
+}
+
+.section .motion.is_on.sec_img.mask_slide_right .img_wrap:after {
+    transform: translate3d(101%, 0, 0);
+    -webkit-transform: translate3d(101%, 0, 0);
+    -moz-transform: translate3d(101%, 0, 0);
+    -ms-transform: translate3d(101%, 0, 0);
+    -o-transform: translate3d(101%, 0, 0);
+}
+
+/* to left */
+.section .motion.sec_img.mask_slide_left .bx_img {
+    transform: translate3d(25%, 0, 0);
+    -webkit-transform: translate3d(25%, 0, 0);
+    -moz-transform: translate3d(25%, 0, 0);
+    -ms-transform: translate3d(25%, 0, 0);
+    -o-transform: translate3d(25%, 0, 0);
+}
+
+.section .motion.is_on.sec_img.mask_slide_left .img_wrap:after {
+    transform: translate3d(-101%, 0, 0);
+    -webkit-transform: translate3d(-101%, 0, 0);
+    -moz-transform: translate3d(-101%, 0, 0);
+    -ms-transform: translate3d(-101%, 0, 0);
+    -o-transform: translate3d(-101%, 0, 0);
+}
+
+/* to top */
+.section .motion.sec_img.mask_slide_top .bx_img {
+    transform: translate3d(0, 25%, 0);
+    -webkit-transform: translate3d(0, 25%, 0);
+    -moz-transform: translate3d(0, 25%, 0);
+    -ms-transform: translate3d(0, 25%, 0);
+    -o-transform: translate3d(0, 25%, 0);
+}
+
+.section .motion.is_on.sec_img.mask_slide_top .img_wrap:after {
+    transform: translate3d(0, -101%, 0);
+    -webkit-transform: translate3d(0, -101%, 0);
+    -moz-transform: translate3d(0, -101%, 0);
+    -ms-transform: translate3d(0, -101%, 0);
+    -o-transform: translate3d(0, -101%, 0);
+}
+
+/* to bottom */
+.section .motion.sec_img.mask_slide_bottom .bx_img {
+    transform: translate3d(0, -25%, 0);
+    -webkit-transform: translate3d(0, -25%, 0);
+    -moz-transform: translate3d(0, -25%, 0);
+    -ms-transform: translate3d(0, -25%, 0);
+    -o-transform: translate3d(0, -25%, 0);
+}
+
+.section .motion.is_on.sec_img.mask_slide_bottom .img_wrap:after {
+    transform: translate3d(0, 101%, 0);
+    -webkit-transform: translate3d(0, 101%, 0);
+    -moz-transform: translate3d(0, 101%, 0);
+    -ms-transform: translate3d(0, 101%, 0);
+    -o-transform: translate3d(0, 101%, 0);
+}
+
+/*모션공통 */
+.section .motion.is_on.sec_img .bx_img {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -webkit-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -moz-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -ms-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -o-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+}
+
+.section .motion.is_on.sec_img .img_wrap:after {
+    transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -webkit-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -moz-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -ms-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+    -o-transition: transform 1.2s cubic-bezier(0.675, 0.005, 0.310, 1.005);
+}
+
+/* Hover Zoom ====================*/
+/* mask_slide와 중복사용 불가*/
+.section .motion.mask_zoom_in .bx_img {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+    -moz-transition: transform 0.5s ease-in;
+    -ms-transition: transform 0.5s ease-in;
+    -o-transition: transform 0.5s ease-in;
+}
+
+.section .motion.mask_zoom_in:hover .bx_img {
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+
+}
+
+/* Slide  =========================================================*/
+/* To left */
+.section .motion.slide_left {
+    opacity: 0;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+}
+
+/* To right */
+.section .motion.slide_right {
+    opacity: 0;
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+}
+
+/* To top */
+.section .motion.slide_top {
+    opacity: 0;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
+
+/* To bottom */
+.section .motion.slide_bottom {
+    opacity: 0;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+/* 모션 공통*/
+.section .motion.is_on.slide_left,
+.section .motion.is_on.slide_right {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: transform 0.55s 0.2s ease-out, opacity 0.55s 0.2s linear;
+    -webkit-transition: transform 0.55s 0.2s ease-out, opacity 0.55s 0.2s linear;
+    -moz-transition: transform 0.55s 0.2s ease-out, opacity 0.55s 0.2s linear;
+    -ms-transition: transform 0.55s 0.2s ease-out, opacity 0.55s 0.2s linear;
+    -o-transition: transform 0.55s 0.2s ease-out, opacity 0.55s 0.2s linear;
+}
+
+.section .motion.is_on.slide_top,
+.section .motion.is_on.slide_bottom {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: transform 0.65s ease-out, opacity 0.65s linear;
+    -webkit-transition: transform 0.65s ease-out, opacity 0.65s linear;
+    -moz-transition: transform 0.65s ease-out, opacity 0.65s linear;
+    -ms-transition: transform 0.65s ease-out, opacity 0.65s linear;
+    -o-transition: transform 0.65s ease-out, opacity 0.65s linear;
+}
+
+/* delay as apply same effect of next obj*/
+.section .motion.slide_left+.slide_left,
+.section .motion.slide_right+.slide_right,
+.section .motion.slide_top+.slide_top,
+.section .motion.slide_bottom+.slide_bottom {
+    transition-delay: 0.25s;
+}
+
+/* Fade  =========================================================*/
+/* Fade-in */
+.section .motion.fade_in {
+    opacity: 0;
+}
+
+.section .motion.is_on.fade_in {
+    opacity: 1;
+    transition: opacity 0.65s linear;
+    -webkit-transition: opacity 0.65s linear;
+    -moz-transition: opacity 0.65s linear;
+    -ms-transition: opacity 0.65s linear;
+    -o-transition: opacity 0.65s linear;
+}
+
+/* Fade-out */
+.section .motion.fade_out {
+    opacity: 1;
+}
+
+.section .motion.is_on.fade_out {
+    opacity: 0;
+    transition: opacity 0.65s linear;
+    -webkit-transition: opacity 0.65s linear;
+    -moz-transition: opacity 0.65s linear;
+    -ms-transition: opacity 0.65s linear;
+    -o-transition: opacity 0.65s linear;
+}
+
+/* Zoom  =========================================================*/
+/* Zoom in */
+.section .motion.zoom_in {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.section .motion.is_on.zoom_in {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: transform 0.65s linear;
+    -webkit-transition: transform 0.65s linear;
+    -moz-transition: transform 0.65s linear;
+    -ms-transition: transform 0.65s linear;
+    -o-transition: transform 0.65s linear;
+}
+
+/* Zoom out */
+.section .motion.zoom_out {
+    transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    -moz-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    -o-transform: scale(1.12);
+}
+
+.section .motion.is_on.zoom_out {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: transform 0.65s linear;
+    -webkit-transition: transform 0.65s linear;
+    -moz-transition: transform 0.65s linear;
+    -ms-transition: transform 0.65s linear;
+    -o-transition: transform 0.65s linear;
+}
