@@ -1,0 +1,721 @@
+@charset "utf-8";
+@import url('reset.css');
+
+/* ----------------------------------------------------------
+	공통 
+---------------------------------------------------------- */
+* {
+  outline-color: #cd9a81;
+}
+@media (min-width:415px){
+  .mc{ display: none;}
+}
+
+/* display */
+#container {
+  position: relative;
+  z-index: 1;
+}
+
+.hidden { display: hidden;}
+
+[class^="img"] {
+  display: block;
+  width: 100%;
+}
+
+.img-bg {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.grid-flex {
+  display: flex;
+}
+
+/* 정렬 */
+.align-left {text-align: left;}
+.align-center {text-align: center;}
+.align-right {text-align: right;}
+
+.grid-table {display: table;}
+
+.grid-table-middle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* ----------------------------------------------------------
+	GNB 'login', 'intro' page
+---------------------------------------------------------- */
+#gnb{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  border-bottom: 1px solid #1e1e1e;
+}
+
+#gnb .gnb-inner{
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1580px;
+  height: 70px;
+}
+
+#gnb .gnb-inner .logo{
+  background: url(../img/logo.png) no-repeat left center;
+  background-size: 100% auto;
+  float: left;
+  width: 78px;
+  height: 16px;
+  margin-top: 27px;
+  text-indent: -9999rem;
+  font-size: 0;
+  color: transparent;
+}
+/* ----------------------------------------------------------
+	component # button
+---------------------------------------------------------- */
+/* 기본 버튼 */
+.btn-group {width: 100%;}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: transparent;
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn:hover,.btn:active {color: #AD7B61;}
+
+/* :disabled */
+.btn:disabled,
+.btn:hover:disabled.btn:active:disabled {
+  color: #fff;
+  opacity: .3;
+  cursor: default;
+}
+
+/* 텍스트 버튼 */
+.btn-label {
+  padding: 0.5rem;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn-label:focus {
+  outline: none;
+  text-decoration: underline;
+}
+/* 버튼 사이즈 */
+.btn-xl {
+  padding: 1.5rem 2.25rem;
+  font-size: 1.5rem;
+}
+
+.btn-lg {
+  padding: 1.125rem 1.875rem;
+  font-size: 1.25rem;
+}
+
+.btn-md {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-sm {
+  height: 2.25rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-xs {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.btn-flex {
+  width: 100%;
+}
+
+.forget-password-btn {
+  display: flex;
+}
+
+.forget-password-btn button {
+  width: 50%;
+}
+
+.forget-password-btn button:first-child {
+  margin-right: 10px;
+}
+
+/* 버튼 컬러 */
+.btn-base {
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: #AD7B61;
+}
+
+.btn-point {
+  border-color: #AD7B61;
+  background: #AD7B61;
+  color: #fff;
+}
+
+.btn-point:active,
+.btn-point:hover {
+  color: #000;
+}
+
+.btn-login {
+  border-color: #9D9D9D;
+  background: #C2C2C2;
+  color: #6F6F6F;
+}
+
+.btn-login:active,
+.btn-login:hover {
+  border-color: #fff;
+  background: transparent;
+  color: #fff;
+}
+
+/* 초기화설정 */
+/* ----------------------------------------------------------
+	component # form
+---------------------------------------------------------- */
+/* 레이아웃 */
+.form-group,
+.form-group-block {
+  padding: 0.5rem 0;
+}
+
+.form-group label {
+  padding-right: 0.5rem;
+}
+
+.form-group-block label {
+  padding: 0.25rem 0 0.5rem;
+}
+
+.form-group-block input {
+  width: 100%;
+}
+
+/* input */
+label {
+  display: inline-block;
+  text-align: left;
+}
+
+input {
+  min-width: 3.75rem;
+  height: 2.25rem;
+  border: 0.0625rem solid #6f6f6f;
+  padding: 0.5rem;
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:disabled {
+  background: #eeeeee;
+  border-color: #dbdbdb;
+}
+
+/* radio & checkbox */
+.rdo-group,
+.chk-group {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.875rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.rdo-group input,
+.chk-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.rdo,
+.chk {
+  position: absolute;
+  left: -1.875rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #141414;
+}
+
+.rdo {
+  border-radius: 50%;
+}
+
+.rdo:after,
+.chk:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.chk-group input:checked+label .chk:after,
+.rdo-group input:checked+label .rdo:after {
+  display: block;
+}
+
+/* :checked 시 */
+.chk-group .chk:after {
+  left: 0.375rem;
+  top: 0.125rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border: solid #dfdfdf;
+  border-width: 0 0.125rem 0.125rem 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rdo-group .rdo:after {
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background: #dfdfdf;
+}
+
+.chk-group label,
+.rdo-group label {
+  position: relative;
+  display: inline-block;
+  min-height: 1.25rem;
+}
+
+.rdo-group label {
+  font-size: 0.8125rem;
+}
+/* ----------------------------------------------------------
+	Layout # login
+---------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+}
+.intro-wrap,
+.login-wrap,
+.forget-wrap {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #141414;
+  color: #fff;
+}
+
+/* safari 크로스 브라우징 */
+input,
+button {
+  -webkit-border-radius: 0;
+  -webkit-outline: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.logo-wrap {
+  margin: 150px 0 70px 0;
+}
+
+.logo-wrap .logo {
+  width: 78px;
+  height: 16px;
+  margin: 27px 0 150px 140px;
+  background: url(../../common/img/web/logo.png) no-repeat left center;
+  background-size: cover;
+}
+
+.logo-wrap h2 {
+  font-family: 'GenesisSansHead';
+  font-size: 44px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.logo-wrap h2 .pc-hide-hidden{
+  display: inline;
+}
+
+.logo-wrap h3 {
+  font-family: 'GenesisSansHead';
+  font-weight: 100;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.forget-wrap .logo {
+  font-family: 'GenesisSansHead';
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+.login-form,
+.forget-form {
+  width: 432px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.login-form .btn-group,
+.forget-form .btn-group {
+  padding-top: 20px;
+}
+
+.login-form .btn-group .btn-label,
+.forget-form .btn-group .btn-label {
+  position: relative;
+  margin-top: 54px;
+  text-decoration: underline;
+}
+.login-form .btn-group .btn-label::after{
+  position: absolute;
+  top: 21px;
+  right: -5px;
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid  #ad7b61;
+  border-top: 1px solid  #ad7b61;
+  transform: rotate(45deg);
+}
+
+.login-form .password-info,
+.forget-form .password-info {
+  font-size: 11px;
+  color: #ff6662;
+}
+
+
+.login-form .chk-group {
+  margin: 30px 20px 0 0;
+}
+
+.forget-form .btn-group {
+  margin-top: 20px;
+}
+
+.login-form .btn-login {
+  width: 200px;
+  height: 52px;
+  float: right;
+  margin-top: -80px;
+}
+
+.chk-group label {
+  color: rgba(255,255,255,0.3);
+  font-family: 'GenesisSans';
+  font-size: 16px;
+}
+
+.forget-wrap .hint {
+  font-family: 'GenesisSans';
+  color: #AD7B61;
+  font-size: 11px;
+  /* margin-left: 10px; */
+}
+
+.forget-wrap .hint span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* radio & checkbox */
+.login-wrap .rdo,
+.login-wrap .chk {
+  border: 1px solid rgba(111, 111, 111, .8);
+}
+
+.login-wrap .rdo:after,
+.login-wrap .chk:after {
+  border-color: #AD7B61;
+}
+
+/* input */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 432px;
+  height: 70px;
+  padding: 10px 5px 0;
+  /* text-indent: 20px; */
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: #fff;
+  font-size: 18px;
+}
+
+.password-wrap input[type="email"],
+.password-wrap input[type="password"],
+.password-wrap input[type="text"] {
+  color: #141414;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  font-size: 18px;
+  font-family: 'GenesisSans';
+  font-weight: 100;
+}
+
+/* button */
+.btn-base {
+  color: #AD7B61;
+}
+
+.btn-login {
+  font-family: 'GenesisSans';
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.3);
+}
+
+.btn-login:disabled {
+  /* background: rgba(111, 111, 111, 0.2); */
+  border: 1px solid rgba(255,255,255,0.7);
+  color:rgba(255,255,255,0.7);
+}
+
+.btn-forget {
+  height: 52px;
+  font-size: 16px;
+  font-family: 'GenesisSans';
+}
+
+.password-wrap input {
+  width: 100%;
+}
+
+p.ft12 {
+  font-size: 12px;
+  margin: 16px 0 0 0;
+  color: #808080;
+}
+
+.intro-btn-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width:1200px; 
+  margin: 0 auto;
+}
+.intro-btn-wrap a{
+  flex: 1;
+  position: relative;
+  min-height: 320px;
+  min-width: 240px;
+  margin: 12px;
+  border:1px solid #707070;
+  color:#707070;
+  opacity: .44;
+}
+.intro-btn-wrap a p{
+  position: absolute;
+  left: 52px;
+  top:42px;
+  font-size:36px;
+  font-family: 'GenesisSansHead';
+  font-weight: 100;
+
+}
+.intro-btn-wrap a:hover,
+.intro-btn-wrap a:active,
+.intro-btn-wrap a:focus{
+  border-color:#AD7B61;
+  color:#AD7B61;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .login-wrap {
+    width: 100%;
+    margin: auto;
+  }
+
+  .logo-wrap {
+    width: 85%;
+    margin-left: 9.5vw;
+    margin-bottom: 6vw;
+    text-align: left;
+  }
+
+  .logo-wrap .logo {
+    width: 100px;
+    height: 23.3px;
+    margin: 25px 0;
+    background: url(../../common/img/web/logo.png) no-repeat left center;
+    background-size: cover;
+  }
+
+  .logo-wrap h2 {
+    font-family: 'GenesisSansHead';
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 14px;
+    line-height: 34px;
+  }
+  .logo-wrap h2 .pc-hide-hidden{
+    display: block;
+  }
+  .logo-wrap h3 {
+    font-family: 'GenesisSansHead';
+    font-weight: 100;
+    font-size: 19px;
+    font-weight: normal;
+  }
+
+  .forget-wrap .logo {
+    font-size: 32px;
+    text-align: left;
+    width: 85%;
+    margin: 0 auto 10px 9.5vw;
+  }
+
+  .login-form,
+  .forget-form {
+    width: 85%;
+    margin: 0 auto 0;
+    align-items: center;
+  }
+
+  .login-form .chk-group {
+    margin: 0px 20px 0 0;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    height: 60px;
+    padding: 10px 5px;
+    text-indent: 16px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #707070;
+  }
+
+  input[type="email"]::placeholder,
+  input[type="password"]::placeholder,
+  input[type="text"]::placeholder {
+    font-size: 14px;
+    font-family: 'GenesisSans';
+    font-weight: 100;
+  }
+
+  .login-form .btn-login {
+    width: 100%;
+    height: 60px;
+    float: none;
+    margin-top: 0;
+    position: static;
+  }
+
+  .btn-login {
+    position: fixed;
+    width: 85%;
+    bottom: 30px;
+  }
+
+  /* .btn-forget {
+    font-size: 18px;
+  } */
+
+  .intro-btn-wrap{
+    width:100%; 
+    padding:0 30px;
+  }
+  .intro-btn-wrap a{
+    min-height: auto;
+  }
+  .intro-btn-wrap a p{
+    left: 22px;
+    top: 20px;
+    font-size:23px;
+  }
+  .intro-btn-wrap img{
+    width: 100%;
+  }
+ .intro-wrap .logo-wrap{
+   text-align: left;
+  }
+  .intro-wrap .logo-wrap .logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .forget-password-btn button{
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width:1064px) and (min-width:768px){
+  .intro-btn-wrap{
+    width: 100%;
+  }
+}
+
+@media(max-width:600px){
+  #gnb .gnb-inner{
+    width: 100%;
+  }
+  .intro-wrap .logo-wrap h2{
+    margin-top: 50px;
+    font-size:28px;
+  }
+  .intro-btn-wrap{
+    display: block;
+  }
+  .intro-btn-wrap a{
+    display: block;
+    width: 100%;
+    /* max-width:315px; */
+    margin: 0 auto 22px;
+  }
+  .intro-btn-wrap a p{
+    left: 24px;
+    top: 20px;
+  }
+  .login-form .btn-group .btn-label,
+  .forget-form .btn-group .btn-label {
+    margin-top: 25px;
+  }
+}
+@media(max-height:600px){
+  .btn-login {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+}

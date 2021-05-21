@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="Author" content="sky">
+  <meta name="title" content="sky">
+  <meta name="keywords" content="sky,">
+  <meta name="description" content="sky Digital Sales Guide">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <main id="container" class="login-wrap bg-base grid-table">
+
+    <!-- 21.02.08 추가 navigation -->
+    <nav id="gnb">
+      <div class="gnb-inner">
+        <h1 class="logo">sky</h1>
+      </div>
+    </nav>
+
+
+    <section class="grid-table-middle">
+      <header class="logo-wrap">
+        <!-- <h1 class="logo"></h1> -->
+        <h2>DIGITAL <span class="pc-hide-hidden">SALES GUIDE</span></h2>
+        <h3>form</h3>
+
+      </header>
+      <form class="login-form align-left">
+        <!-- Login form -->
+        <section class="form-group-block">
+          <input type="email" name="loginEmail" id="loginEmail" placeholder="E-Mail" />
+        </section>
+        <section class="form-group-block">
+          <input type="password" name="loginPassword" id="loginPassword" placeholder="Password" />
+        </section>
+        <div class="form-group-block chk-group">
+          <input type="checkbox" name="loginRemember" id="loginRemember" />
+          <label for="loginRemember"><span class="chk"></span>Remember E-mail</label>
+        </div>
+        <!-- Login button -->
+        <section class="form-group-block btn-group align-center">
+          <button type="button" id="btnLogin" class="btn btn-md btn-flex btn-point btn-login">Login</button>
+          <div class="text-wrap">
+            <p class="ft12">* 금지.</p>
+          </div>
+          <button type="button" id="btnForgetPassword" class="btn-label btn-forget" onclick="location.href='forgetpassword.html'">New of Forget password?</button>
+        </section>
+      </form>
+    </section>
+  </main>
+
+
+  <script src="../../resources/common/js/lib/jquery-3.4.1.min.js"></script>
+
+</body>
+
+</html>

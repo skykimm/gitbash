@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+	# Font face
+---------------------------------------------------------- */
+@font-face {
+  font-family: "GenesisSansHead";
+  src: url("../font/GenesisSansHeadKRLight.eot");
+  src: url("../font/GenesisSansHeadKRLight.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansHeadKRLight.woff") format("woff"), url("../font/GenesisSansHeadKRLight.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GenesisSansHead";
+  src: url("../font/GenesisSansHeadKRRegular.eot");
+  src: url("../font/GenesisSansHeadKRRegular.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansHeadKRRegular.woff") format("woff"), url("../font/GenesisSansHeadKRRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GenesisSans";
+  src: url("../font/GenesisSansTextKRRegular.eot");
+  src: url("../font/GenesisSansTextKRRegular.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansTextKRRegular.woff") format("woff"), url("../font/GenesisSansTextKRRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GenesisSans";
+  src: url("../font/GenesisSansTextKRMedium.eot");
+  src: url("../font/GenesisSansTextKRMedium.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansTextKRMedium.woff") format("woff"), url("../font/GenesisSansTextKRMedium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GenesisSans";
+  src: url("../font/GenesisSansTextKRBold.eot");
+  src: url("../font/GenesisSansTextKRBold.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansTextKRBold.woff") format("woff"), url("../font/GenesisSansTextKRBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ----------------------------------------------------------
+	# publish guide 2019
+  # 초기화 
+  # 수정금지
+---------------------------------------------------------- */
+/*Default set*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'GenesisSans', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+button, select, input {
+  font-family: 'GenesisSans', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+code, pre {
+  font-size: 1em;
+}
+
+address, em, cite {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+a:disabled,
+button:disabled {
+  cursor: default;
+}
+
+hr {
+  display: none;
+}
+
+/* ----------------------------------------------------------
+# 타이포 관련 공통 스타일 재지정
+---------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, main {
+  word-break: keep-all;
+}
+
+a {
+  color: #141414;
+}
+
+a :visited {
+  color: #141414;
+}
+
+button {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, dl,
+li, dd {
+  list-style: none;
+}
+
+/* ----------------------------------------------------------
+# 레이아웃 관련 공통 스타일 재지정
+---------------------------------------------------------- */
+html {
+  position: relative;
+  overflow-y: scroll;
+}
+
+.not-scroll {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+/* ----------------------------------------------------------
+# 컴포넌트 관련 공통 스타일 재지정
+---------------------------------------------------------- */
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.req:after {
+  content: '*';
+  margin-left: 3px;
+}
+
+input:focus {
+  outline: 0 none;
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+}
