@@ -1,48 +1,5 @@
 @charset "UTF-8";
 /* ----------------------------------------------------------
-	# Font face
----------------------------------------------------------- */
-@font-face {
-  font-family: "GenesisSansHead";
-  src: url("../font/GenesisSansHeadKRLight.eot");
-  src: url("../font/GenesisSansHeadKRLight.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansHeadKRLight.woff") format("woff"), url("../font/GenesisSansHeadKRLight.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GenesisSansHead";
-  src: url("../font/GenesisSansHeadKRRegular.eot");
-  src: url("../font/GenesisSansHeadKRRegular.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansHeadKRRegular.woff") format("woff"), url("../font/GenesisSansHeadKRRegular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GenesisSans";
-  src: url("../font/GenesisSansTextKRRegular.eot");
-  src: url("../font/GenesisSansTextKRRegular.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansTextKRRegular.woff") format("woff"), url("../font/GenesisSansTextKRRegular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GenesisSans";
-  src: url("../font/GenesisSansTextKRMedium.eot");
-  src: url("../font/GenesisSansTextKRMedium.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansTextKRMedium.woff") format("woff"), url("../font/GenesisSansTextKRMedium.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "GenesisSans";
-  src: url("../font/GenesisSansTextKRBold.eot");
-  src: url("../font/GenesisSansTextKRBold.eot?#iefix") format("embedded-opentype"), url("../font/GenesisSansTextKRBold.woff") format("woff"), url("../font/GenesisSansTextKRBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-/* ----------------------------------------------------------
 	# publish guide 2019
   # 초기화 
   # 수정금지
@@ -69,11 +26,6 @@ time, mark, audio, video, main {
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'GenesisSans', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-}
-
-button, select, input {
-  font-family: 'GenesisSans', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
